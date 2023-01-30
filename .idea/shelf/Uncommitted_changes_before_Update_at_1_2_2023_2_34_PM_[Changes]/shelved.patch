@@ -1,0 +1,801 @@
+Index: Assignment_3.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"e8b38c6f\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"1. Why are functions advantageous to have in your programs?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: With the help of a function we can avoid rewriting the same logic code again and again in a program.We can call a              function multiple times insteed of writing the same logic of code multiple time.We can track a large Python program            easily when it is divided into multiple functions.The main achievement of Python functions is its Reusability.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"b3479f88\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"2. When does the code in a function run: when it's specified or when it's called?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:When the function is called it will execute the code of that function not when its was defined.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"6ff4a499\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"3. What statement creates a function?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: def is the key word reserve for creating a function in python.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"98c55303\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"4. What is the difference between a function and a function call?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:When the funcyion is defined python interpreter only check the syntex of the code.\\n\",\r\n    \"        and when we call that function python interpreter will execute the whole block of code inside that specific function.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"394f9621\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"5. How many global scopes are there in a Python program? How many local scopes?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:There is one global scope, and a local scope is created whenever a function is called.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"9f6c9e54\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"6. What happens to variables in a local scope when the function call returns?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Each call of the function creates new local variables, and their lifetimes expire when the function returns \\n\",\r\n    \"        to the caller.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4c3faf0c\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"7. What is the concept of a return value? Is it possible to have a return value in an expression?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:A return value is the value that a function call evaluates to. Like any value, a return value can be used as part of an         expression.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"a05e7360\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"8. If a function does not have a return statement, what is the return value of a call to that function?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:If there is no return ststement in a function then it will return nothing\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"1eff5bd8\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"9. How do you make a function variable refer to the global variable?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:To create a global variable inside a function, we can use the global keyword.\\n\",\r\n    \"        e.g. def add(x,y)\\n\",\r\n    \"                 global z\\n\",\r\n    \"                 z=x+y\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"635ac25d\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"10. What is the data type of None?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Nonetype\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"9f3ef825\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"11. What does the sentence import areallyourpetsnamederic do?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:It will import the module name with areallyourpetsnamederic\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"3f765786\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"12. If you had a bacon() feature in a spam module, what would you call it after importing spam?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: spam.bacon() after importing the spam module.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"c911b156\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"13. What can you do to save a programme from crashing if it encounters an error?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:We will place the line or block of code which may cause an error in side try block.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"60ae82dc\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"14. What is the purpose of the try clause? What is the purpose of the except clause?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:When any line of code get an exception inside a try block.Because of that exception our program won't stop .\\n\",\r\n    \"        Then our program execute the except block of code and its keep on runing.\\n\",\r\n    \"        try and except are like if and else .In try we first give a try to excecute the lines of code if we got any \\n\",\r\n    \"        exception then we move to except otherwise python will execute the lines of code that came after except block.  \"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.9.12\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assignment_3.ipynb b/Assignment_3.ipynb
+--- a/Assignment_3.ipynb	(revision 6e3eace1e2ebfb79b9524b4cdd5605bbd59a25ba)
++++ b/Assignment_3.ipynb	(date 1672513389248)
+@@ -1,8 +1,8 @@
+ {
+  "cells": [
+   {
+-   "cell_type": "raw",
+-   "id": "e8b38c6f",
++   "cell_type": "markdown",
++   "id": "d6546687",
+    "metadata": {},
+    "source": [
+     "1. Why are functions advantageous to have in your programs?\n",
+@@ -11,8 +11,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "b3479f88",
++   "cell_type": "markdown",
++   "id": "55103bc4",
+    "metadata": {},
+    "source": [
+     "2. When does the code in a function run: when it's specified or when it's called?\n",
+@@ -21,8 +21,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "6ff4a499",
++   "cell_type": "markdown",
++   "id": "8a08d1d9",
+    "metadata": {},
+    "source": [
+     "3. What statement creates a function?\n",
+@@ -31,8 +31,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "98c55303",
++   "cell_type": "markdown",
++   "id": "b82ad634",
+    "metadata": {},
+    "source": [
+     "4. What is the difference between a function and a function call?\n",
+@@ -42,8 +42,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "394f9621",
++   "cell_type": "markdown",
++   "id": "7422d21c",
+    "metadata": {},
+    "source": [
+     "5. How many global scopes are there in a Python program? How many local scopes?\n",
+@@ -52,8 +52,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "9f6c9e54",
++   "cell_type": "markdown",
++   "id": "0c2b0dbd",
+    "metadata": {},
+    "source": [
+     "6. What happens to variables in a local scope when the function call returns?\n",
+@@ -63,8 +63,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4c3faf0c",
++   "cell_type": "markdown",
++   "id": "bf1ba4b9",
+    "metadata": {},
+    "source": [
+     "7. What is the concept of a return value? Is it possible to have a return value in an expression?\n",
+@@ -73,8 +73,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "a05e7360",
++   "cell_type": "markdown",
++   "id": "daca75ba",
+    "metadata": {},
+    "source": [
+     "8. If a function does not have a return statement, what is the return value of a call to that function?\n",
+@@ -83,8 +83,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "1eff5bd8",
++   "cell_type": "markdown",
++   "id": "701adf71",
+    "metadata": {},
+    "source": [
+     "9. How do you make a function variable refer to the global variable?\n",
+@@ -96,8 +96,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "635ac25d",
++   "cell_type": "markdown",
++   "id": "0274da14",
+    "metadata": {},
+    "source": [
+     "10. What is the data type of None?\n",
+@@ -106,8 +106,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "9f3ef825",
++   "cell_type": "markdown",
++   "id": "175149fc",
+    "metadata": {},
+    "source": [
+     "11. What does the sentence import areallyourpetsnamederic do?\n",
+@@ -116,8 +116,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "3f765786",
++   "cell_type": "markdown",
++   "id": "396bd895",
+    "metadata": {},
+    "source": [
+     "12. If you had a bacon() feature in a spam module, what would you call it after importing spam?\n",
+@@ -126,8 +126,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "c911b156",
++   "cell_type": "markdown",
++   "id": "5911a5d3",
+    "metadata": {},
+    "source": [
+     "13. What can you do to save a programme from crashing if it encounters an error?\n",
+@@ -136,8 +136,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "60ae82dc",
++   "cell_type": "markdown",
++   "id": "7a51b008",
+    "metadata": {},
+    "source": [
+     "14. What is the purpose of the try clause? What is the purpose of the except clause?\n",
+Index: .ipynb_checkpoints/Assignment_1-checkpoint.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"6918cefd\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"1. In the below elements which of them are values or an expression? eg:- values can be\\n\",\r\n    \"integer or string and expressions will be mathematical operators.\\n\",\r\n    \"*\\n\",\r\n    \"'hello'\\n\",\r\n    \"-87.8\\n\",\r\n    \"-\\n\",\r\n    \"/\\n\",\r\n    \"+\\n\",\r\n    \"6\\n\",\r\n    \"\\n\",\r\n    \"Answer-:values='hello',-87.8,6\\n\",\r\n    \"        expression=*,-,/,+\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"dbffc217\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"2. What is the difference between string and variable?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Variable can store the information in form of values .variable can store the any data type e.g.interger,float string.\\n\",\r\n    \"         We can not assign white space between the characters of a variable name .\\n\",\r\n    \"         \\n\",\r\n    \"         String is a value that is inside quotes.Variable can hold a string but string can not hold a variable.\\n\",\r\n    \"         We can assign white space in a string.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"6c45b773\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"3. Describe three different data types.\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Integer-is a whole number without decimals e.g. 1,2,10.In python we can convert any data type into integer\\n\",\r\n    \"                 using int() function.\\n\",\r\n    \"         \\n\",\r\n    \"         Float- is a number with decimals e.g.2.5,3.8.We can convert any data type to float using float() function.\\n\",\r\n    \"         \\n\",\r\n    \"         String-Any thing inside the quotes is called string,It can be Integer,float inside quotes.\\n\",\r\n    \"                E.g-\\\"vipin\\\",\\\"123\\\",\\\"0.25\\\".We can convert any data type to string using str() function.\\n\",\r\n    \"            \\n\",\r\n    \"        These are three buildin data types in python.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"623fb4b5\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"4. What is an expression made up of? What do all expressions do?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:A construct that consists of variables, operators, and method calls and is built using the \\n\",\r\n    \"        language's syntax is known as an expression. An expression evaluates to a single value.\\n\",\r\n    \"        An expression evaluates to a value\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"ae245fcf\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"5. This assignment statements, like spam = 10. What is the difference between an\\n\",\r\n    \"expression and a statement?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Every statement can be an expression.But every expression can’t be a statement.\\n\",\r\n    \"        A statement executes something but An expression evaluates to a value.\\n\",\r\n    \"        Execution of a statement may or may not produces or displays a result value, it only does whatever the statement says.\\n\",\r\n    \"        but Evaluation of an expression always Produces or returns a result value.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"c36daf03\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"6. After running the following code, what does the variable bacon contain?\\n\",\r\n    \"bacon = 22\\n\",\r\n    \"bacon + 1\\n\",\r\n    \"\\n\",\r\n    \"Answer-:After running this code bacon still contain 22 because we added 1 to bacon variable but \\n\",\r\n    \"        we did not assign the new value to the bacon variable that why it is still 22\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4b8065e9\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"7. What should the values of the following two terms be?\\n\",\r\n    \"'spam'+'spamspam'\\n\",\r\n    \"'spam'*3\\n\",\r\n    \"\\n\",\r\n    \"Answer-: In the first statment we are doing concatation of two string \\n\",\r\n    \"         which will return 'spamspamspam' and in the second statment we are multiplying a string with it self by \\n\",\r\n    \"         three times which will be 'spamspamspam'.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4e3e47d0\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"8. Why is eggs a valid variable name while 100 is invalid?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:As per the variable name conventions a variable should be according to \\n\",\r\n    \"        A variable name must start with a letter or the underscore character\\n\",\r\n    \"        A variable name cannot start with a number\\n\",\r\n    \"        A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )\\n\",\r\n    \"        Variable names are case-sensitive (age, Age and AGE are three different variables)\\n\",\r\n    \"        \\n\",\r\n    \"        Thts why eggs is a valid variable name and 100 is invalid.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"b7a3d43b\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"9. What three functions can be used to get the integer, floating-point number, or string\\n\",\r\n    \"version of a value?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: int() used to get a integer.\\n\",\r\n    \"         float() is used to get a float.\\n\",\r\n    \"         str() is used to get a string.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"67945128\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"10. Why does this expression cause an error? How can you fix it?\\n\",\r\n    \"'I have eaten'+99+'burritos.'\\n\",\r\n    \"\\n\",\r\n    \"Answer-: In this expression the cause is that we are using mix data types to get some value.\\n\",\r\n    \"         To solve that issue in this expression we have to change the data type of 99 from integer to string.\\n\",\r\n    \"         'I have eaten'+str(99)+'burritos.'\"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.9.12\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.ipynb_checkpoints/Assignment_1-checkpoint.ipynb b/.ipynb_checkpoints/Assignment_1-checkpoint.ipynb
+--- a/.ipynb_checkpoints/Assignment_1-checkpoint.ipynb	(revision 6e3eace1e2ebfb79b9524b4cdd5605bbd59a25ba)
++++ b/.ipynb_checkpoints/Assignment_1-checkpoint.ipynb	(date 1672513489064)
+@@ -1,8 +1,8 @@
+ {
+  "cells": [
+   {
+-   "cell_type": "raw",
+-   "id": "6918cefd",
++   "cell_type": "markdown",
++   "id": "15651a01",
+    "metadata": {},
+    "source": [
+     "1. In the below elements which of them are values or an expression? eg:- values can be\n",
+@@ -20,8 +20,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "dbffc217",
++   "cell_type": "markdown",
++   "id": "fb492ee5",
+    "metadata": {},
+    "source": [
+     "2. What is the difference between string and variable?\n",
+@@ -34,8 +34,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "6c45b773",
++   "cell_type": "markdown",
++   "id": "25940172",
+    "metadata": {},
+    "source": [
+     "3. Describe three different data types.\n",
+@@ -52,8 +52,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "623fb4b5",
++   "cell_type": "markdown",
++   "id": "94e158c7",
+    "metadata": {},
+    "source": [
+     "4. What is an expression made up of? What do all expressions do?\n",
+@@ -64,8 +64,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "ae245fcf",
++   "cell_type": "markdown",
++   "id": "b03a2db0",
+    "metadata": {},
+    "source": [
+     "5. This assignment statements, like spam = 10. What is the difference between an\n",
+@@ -78,8 +78,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "c36daf03",
++   "cell_type": "markdown",
++   "id": "3557399d",
+    "metadata": {},
+    "source": [
+     "6. After running the following code, what does the variable bacon contain?\n",
+@@ -91,8 +91,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4b8065e9",
++   "cell_type": "markdown",
++   "id": "f829a2a8",
+    "metadata": {},
+    "source": [
+     "7. What should the values of the following two terms be?\n",
+@@ -105,8 +105,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4e3e47d0",
++   "cell_type": "markdown",
++   "id": "982d9ac4",
+    "metadata": {},
+    "source": [
+     "8. Why is eggs a valid variable name while 100 is invalid?\n",
+@@ -121,8 +121,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "b7a3d43b",
++   "cell_type": "markdown",
++   "id": "b60df10d",
+    "metadata": {},
+    "source": [
+     "9. What three functions can be used to get the integer, floating-point number, or string\n",
+@@ -134,8 +134,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "67945128",
++   "cell_type": "markdown",
++   "id": "01a18d96",
+    "metadata": {},
+    "source": [
+     "10. Why does this expression cause an error? How can you fix it?\n",
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"fb70dd09-2d84-448d-bcb8-e86b7a723617\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2JfS5KAOJ6ovdsCizaxwi3Iq6HC\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\vipin\\OneDrive\\Desktop\\assingments\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"assingments\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"fb70dd09-2d84-448d-bcb8-e86b7a723617\" name=\"Changes\" comment=\"\" />\r\n      <created>1672467460573</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1672467460573</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6e3eace1e2ebfb79b9524b4cdd5605bbd59a25ba)
++++ b/.idea/workspace.xml	(date 1672650207886)
+@@ -1,7 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="fb70dd09-2d84-448d-bcb8-e86b7a723617" name="Changes" comment="" />
++    <list default="true" id="fb70dd09-2d84-448d-bcb8-e86b7a723617" name="Changes" comment="commit">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Assignment_1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Assignment_1-checkpoint.ipynb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Assignment_2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Assignment_2-checkpoint.ipynb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1.ipynb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment_2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_2.ipynb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_3.ipynb" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -13,12 +20,25 @@
+         <option value="Python Script" />
+       </list>
+     </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2JfS5KAOJ6ovdsCizaxwi3Iq6HC" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
++  }
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\vipin\OneDrive\Desktop\assingments" />
+@@ -61,6 +81,37 @@
+       <option name="presentableId" value="Default" />
+       <updated>1672467460573</updated>
+     </task>
++    <task id="LOCAL-00001" summary="second commit">
++      <created>1672505243223</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1672505243223</updated>
++    </task>
++    <task id="LOCAL-00002" summary="commit">
++      <created>1672510328409</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1672510328409</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="second commit" />
++    <MESSAGE value="commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="commit" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: .ipynb_checkpoints/Assignment_2-checkpoint.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"fc4a9090\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"1.What are the two values of the Boolean data type? How do you write them?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: There are two type of Boolean values which are True and False.\\n\",\r\n    \"         When a specific condition is true in an expression it is True e.g. a=1,a==1 it will return True and When a specific            condition is wrong then it is False e.g.a=6,a==4 it will return False. \"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"6c9d1096\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"2. What are the three different types of Boolean operators?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Comparison operators- are used to comparing values and evaluate down to a single Boolean value of either True or False.e.g.==,!=,>,<,<=,>=\\n\",\r\n    \"\\n\",\r\n    \"        Logical Operators-and, or and not are also referred to as Boolean operators. and and or require 2 operands and are thus         called binary operators.eg.and,or,not\\n\",\r\n    \"        \\n\",\r\n    \"        \"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"643c70a7\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"3. Make a list of each Boolean operators truth tables (i.e. every possible combination of Booleanvalues for the operator and what it evaluate ).\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Truth Table for and Operation:\\n\",\r\n    \"        X\\t    Y\\t    X and Y\\n\",\r\n    \"        False\\tFalse\\tFalse\\n\",\r\n    \"        True\\tFalse\\tFalse\\n\",\r\n    \"        False\\tTrue\\tFalse\\n\",\r\n    \"        True\\tTrue\\tTrue\\n\",\r\n    \"        \\n\",\r\n    \"       Truth Table for or Operation:\\n\",\r\n    \"        X\\t    Y\\t    X or Y\\n\",\r\n    \"        False\\tFalse\\tFalse\\n\",\r\n    \"        True\\tFalse\\tTrue\\n\",\r\n    \"        False\\tTrue\\tTrue\\n\",\r\n    \"        True\\tTrue\\tTrue\\n\",\r\n    \"        \\n\",\r\n    \"        Truth Table for not Operation:\\n\",\r\n    \"        X\\t    not X\\n\",\r\n    \"        True\\tFalse\\n\",\r\n    \"        False\\tTrue\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"42ad735c\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"4. What are the values of the following expressions?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:(5 > 4) and (3 == 5)=False\\n\",\r\n    \"        not (5 > 4)         =False\\n\",\r\n    \"        (5 > 4) or (3 == 5) =True\\n\",\r\n    \"        (True and True) and (True == False)=False\\n\",\r\n    \"        (not False) or (not True)=True\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"b23b99ae\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"5. What are the six comparison operators?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:==, Equal e.g.1==1 return True,4==5 return False\\n\",\r\n    \"        !=, Not Equal e.g. 1!=2 return True,1!=1 return False\\n\",\r\n    \"        <, Less then e.g. 2<4 return True,2<1 return False\\n\",\r\n    \"        >, Greater then e.g.4>1 return True,2>5 return False\\n\",\r\n    \"        <=,less then equal to e.g. 1<=1 return True,1<=2 return True\\n\",\r\n    \"        >=Greater then equal to 2>=2 return True,2>=1 return True\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"08f86c47\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"6. How do you tell the difference between the equal to and assignment operators?Describe a\\n\",\r\n    \"condition and when you would use one.\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Equal to (==) is use to compare the two expression while Assignment operator(=) is use to assign a value to a variable          E.g.4==6 is equal to ,Here we are comparing 4 and 5 that both are equal or not.\\n\",\r\n    \"             a=4 Here we are assigning the value of 4 to a variable called a.\\n\",\r\n    \"         \"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"ab61dc18\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"7. Identify the three blocks in this code:\\n\",\r\n    \"    \\n\",\r\n    \"Answer-: spam = 0\\n\",\r\n    \"         # First block of code\\n\",\r\n    \"         if spam == 10:\\n\",\r\n    \"             print('eggs)\\n\",\r\n    \"         # Second block of code\\n\",\r\n    \"         if spam >5:\\n\",\r\n    \"             print('bacon')\\n\",\r\n    \"         # Third block of code\\n\",\r\n    \"         else:\\n\",\r\n    \"             print('ham')\\n\",\r\n    \"             print('spam')\\n\",\r\n    \"             print('spam')\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4623fd5c\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints\\n\",\r\n    \"Greetings! if anything else is stored in spam.\\n\",\r\n    \"\\n\",\r\n    \"Answer-: if spam==1:\\n\",\r\n    \"             print('Hello')\\n\",\r\n    \"         if spam==2:\\n\",\r\n    \"             print('Howdy')\\n\",\r\n    \"         else:\\n\",\r\n    \"             print('Greetings!')\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"f4c7d81f\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"9.If your programme is stuck in an endless loop, what keys you’ll press?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Ctrl+C\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"ad133ff5\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"10. How can you tell the difference between break and continue?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Break statement is use to terminate the loop when a specific condition met.It will stop the entire loop and execute            the other line of codes which is not in that loop.\\n\",\r\n    \"        \\n\",\r\n    \"         While The continue statement skips the remaining lines of code, for the current iteration of the loop. In this case,            the loop does not end, it continues with the next iteration.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"a0a32c22\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:range(10) when we use for loop with this range function then our for loop start from 0 and goes till 9 because 10 is           excluded and with step size 1 which is default.In this we defined only the uper limit of the range function .\\n\",\r\n    \"        \\n\",\r\n    \"            \\n\",\r\n    \"        range(0,10) when we use this in for loop,then for loop start from 0 and end at 9 coz 10 is excluded while here we have         defined both the upper and lower limit of range function with default step size.\\n\",\r\n    \"        \\n\",\r\n    \"        range(0,10,1) when we use this in for loop then for loop start from 0 and end at 9 coz 10 is excluded here along with           upper and lower limit we have aslo defined the step size which is 1 in this example\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"27c13b45\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent\\n\",\r\n    \"program that prints the numbers 1 to 10 using a while loop.\\n\",\r\n    \"\\n\",\r\n    \"\\n\",\r\n    \"Answer-:for i in range(1,11):\\n\",\r\n    \"            print(i)\\n\",\r\n    \"        \\n\",\r\n    \"        a=1\\n\",\r\n    \"        while a<11:\\n\",\r\n    \"            print(a)\\n\",\r\n    \"            a+=1\\n\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4f9ac458\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"13. If you had a function named bacon() inside a module named spam, how would you call it after\\n\",\r\n    \"importing spam?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: import spam as sm\\n\",\r\n    \"         sm.bacon()\\n\",\r\n    \"         \\n\",\r\n    \"         or\\n\",\r\n    \"         \\n\",\r\n    \"         import spam\\n\",\r\n    \"         spam.bacon()\\n\",\r\n    \"         \"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.9.12\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.ipynb_checkpoints/Assignment_2-checkpoint.ipynb b/.ipynb_checkpoints/Assignment_2-checkpoint.ipynb
+--- a/.ipynb_checkpoints/Assignment_2-checkpoint.ipynb	(revision 6e3eace1e2ebfb79b9524b4cdd5605bbd59a25ba)
++++ b/.ipynb_checkpoints/Assignment_2-checkpoint.ipynb	(date 1672513435845)
+@@ -1,8 +1,8 @@
+ {
+  "cells": [
+   {
+-   "cell_type": "raw",
+-   "id": "fc4a9090",
++   "cell_type": "markdown",
++   "id": "f86b299f",
+    "metadata": {},
+    "source": [
+     "1.What are the two values of the Boolean data type? How do you write them?\n",
+@@ -12,8 +12,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "6c9d1096",
++   "cell_type": "markdown",
++   "id": "14ad45f3",
+    "metadata": {},
+    "source": [
+     "2. What are the three different types of Boolean operators?\n",
+@@ -26,8 +26,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "643c70a7",
++   "cell_type": "markdown",
++   "id": "1c9bd772",
+    "metadata": {},
+    "source": [
+     "3. Make a list of each Boolean operators truth tables (i.e. every possible combination of Booleanvalues for the operator and what it evaluate ).\n",
+@@ -53,8 +53,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "42ad735c",
++   "cell_type": "markdown",
++   "id": "faaa9a44",
+    "metadata": {},
+    "source": [
+     "4. What are the values of the following expressions?\n",
+@@ -67,8 +67,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "b23b99ae",
++   "cell_type": "markdown",
++   "id": "2217f43b",
+    "metadata": {},
+    "source": [
+     "5. What are the six comparison operators?\n",
+@@ -82,8 +82,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "08f86c47",
++   "cell_type": "markdown",
++   "id": "437a1552",
+    "metadata": {},
+    "source": [
+     "6. How do you tell the difference between the equal to and assignment operators?Describe a\n",
+@@ -95,8 +95,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "ab61dc18",
++   "cell_type": "markdown",
++   "id": "27e06f71",
+    "metadata": {},
+    "source": [
+     "7. Identify the three blocks in this code:\n",
+@@ -116,8 +116,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4623fd5c",
++   "cell_type": "markdown",
++   "id": "c4a70c72",
+    "metadata": {},
+    "source": [
+     "8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints\n",
+@@ -132,8 +132,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "f4c7d81f",
++   "cell_type": "markdown",
++   "id": "be2a0813",
+    "metadata": {},
+    "source": [
+     "9.If your programme is stuck in an endless loop, what keys you’ll press?\n",
+@@ -142,8 +142,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "ad133ff5",
++   "cell_type": "markdown",
++   "id": "710951a7",
+    "metadata": {},
+    "source": [
+     "10. How can you tell the difference between break and continue?\n",
+@@ -154,8 +154,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "a0a32c22",
++   "cell_type": "markdown",
++   "id": "f1963069",
+    "metadata": {},
+    "source": [
+     "11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?\n",
+@@ -169,8 +169,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "27c13b45",
++   "cell_type": "markdown",
++   "id": "6b749499",
+    "metadata": {},
+    "source": [
+     "12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent\n",
+@@ -187,8 +187,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4f9ac458",
++   "cell_type": "markdown",
++   "id": "a6a55b81",
+    "metadata": {},
+    "source": [
+     "13. If you had a function named bacon() inside a module named spam, how would you call it after\n",
+Index: Assignment_2.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"fc4a9090\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"1.What are the two values of the Boolean data type? How do you write them?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: There are two type of Boolean values which are True and False.\\n\",\r\n    \"         When a specific condition is true in an expression it is True e.g. a=1,a==1 it will return True and When a specific            condition is wrong then it is False e.g.a=6,a==4 it will return False. \"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"6c9d1096\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"2. What are the three different types of Boolean operators?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Comparison operators- are used to comparing values and evaluate down to a single Boolean value of either True or False.e.g.==,!=,>,<,<=,>=\\n\",\r\n    \"\\n\",\r\n    \"        Logical Operators-and, or and not are also referred to as Boolean operators. and and or require 2 operands and are thus         called binary operators.eg.and,or,not\\n\",\r\n    \"        \\n\",\r\n    \"        \"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"643c70a7\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"3. Make a list of each Boolean operators truth tables (i.e. every possible combination of Booleanvalues for the operator and what it evaluate ).\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Truth Table for and Operation:\\n\",\r\n    \"        X\\t    Y\\t    X and Y\\n\",\r\n    \"        False\\tFalse\\tFalse\\n\",\r\n    \"        True\\tFalse\\tFalse\\n\",\r\n    \"        False\\tTrue\\tFalse\\n\",\r\n    \"        True\\tTrue\\tTrue\\n\",\r\n    \"        \\n\",\r\n    \"       Truth Table for or Operation:\\n\",\r\n    \"        X\\t    Y\\t    X or Y\\n\",\r\n    \"        False\\tFalse\\tFalse\\n\",\r\n    \"        True\\tFalse\\tTrue\\n\",\r\n    \"        False\\tTrue\\tTrue\\n\",\r\n    \"        True\\tTrue\\tTrue\\n\",\r\n    \"        \\n\",\r\n    \"        Truth Table for not Operation:\\n\",\r\n    \"        X\\t    not X\\n\",\r\n    \"        True\\tFalse\\n\",\r\n    \"        False\\tTrue\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"42ad735c\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"4. What are the values of the following expressions?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:(5 > 4) and (3 == 5)=False\\n\",\r\n    \"        not (5 > 4)         =False\\n\",\r\n    \"        (5 > 4) or (3 == 5) =True\\n\",\r\n    \"        (True and True) and (True == False)=False\\n\",\r\n    \"        (not False) or (not True)=True\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"b23b99ae\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"5. What are the six comparison operators?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:==, Equal e.g.1==1 return True,4==5 return False\\n\",\r\n    \"        !=, Not Equal e.g. 1!=2 return True,1!=1 return False\\n\",\r\n    \"        <, Less then e.g. 2<4 return True,2<1 return False\\n\",\r\n    \"        >, Greater then e.g.4>1 return True,2>5 return False\\n\",\r\n    \"        <=,less then equal to e.g. 1<=1 return True,1<=2 return True\\n\",\r\n    \"        >=Greater then equal to 2>=2 return True,2>=1 return True\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"08f86c47\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"6. How do you tell the difference between the equal to and assignment operators?Describe a\\n\",\r\n    \"condition and when you would use one.\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Equal to (==) is use to compare the two expression while Assignment operator(=) is use to assign a value to a variable          E.g.4==6 is equal to ,Here we are comparing 4 and 5 that both are equal or not.\\n\",\r\n    \"             a=4 Here we are assigning the value of 4 to a variable called a.\\n\",\r\n    \"         \"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"ab61dc18\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"7. Identify the three blocks in this code:\\n\",\r\n    \"    \\n\",\r\n    \"Answer-: spam = 0\\n\",\r\n    \"         # First block of code\\n\",\r\n    \"         if spam == 10:\\n\",\r\n    \"             print('eggs)\\n\",\r\n    \"         # Second block of code\\n\",\r\n    \"         if spam >5:\\n\",\r\n    \"             print('bacon')\\n\",\r\n    \"         # Third block of code\\n\",\r\n    \"         else:\\n\",\r\n    \"             print('ham')\\n\",\r\n    \"             print('spam')\\n\",\r\n    \"             print('spam')\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4623fd5c\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints\\n\",\r\n    \"Greetings! if anything else is stored in spam.\\n\",\r\n    \"\\n\",\r\n    \"Answer-: if spam==1:\\n\",\r\n    \"             print('Hello')\\n\",\r\n    \"         if spam==2:\\n\",\r\n    \"             print('Howdy')\\n\",\r\n    \"         else:\\n\",\r\n    \"             print('Greetings!')\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"f4c7d81f\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"9.If your programme is stuck in an endless loop, what keys you’ll press?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Ctrl+C\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"ad133ff5\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"10. How can you tell the difference between break and continue?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Break statement is use to terminate the loop when a specific condition met.It will stop the entire loop and execute            the other line of codes which is not in that loop.\\n\",\r\n    \"        \\n\",\r\n    \"         While The continue statement skips the remaining lines of code, for the current iteration of the loop. In this case,            the loop does not end, it continues with the next iteration.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"a0a32c22\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:range(10) when we use for loop with this range function then our for loop start from 0 and goes till 9 because 10 is           excluded and with step size 1 which is default.In this we defined only the uper limit of the range function .\\n\",\r\n    \"        \\n\",\r\n    \"            \\n\",\r\n    \"        range(0,10) when we use this in for loop,then for loop start from 0 and end at 9 coz 10 is excluded while here we have         defined both the upper and lower limit of range function with default step size.\\n\",\r\n    \"        \\n\",\r\n    \"        range(0,10,1) when we use this in for loop then for loop start from 0 and end at 9 coz 10 is excluded here along with           upper and lower limit we have aslo defined the step size which is 1 in this example\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"27c13b45\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent\\n\",\r\n    \"program that prints the numbers 1 to 10 using a while loop.\\n\",\r\n    \"\\n\",\r\n    \"\\n\",\r\n    \"Answer-:for i in range(1,11):\\n\",\r\n    \"            print(i)\\n\",\r\n    \"        \\n\",\r\n    \"        a=1\\n\",\r\n    \"        while a<11:\\n\",\r\n    \"            print(a)\\n\",\r\n    \"            a+=1\\n\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4f9ac458\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"13. If you had a function named bacon() inside a module named spam, how would you call it after\\n\",\r\n    \"importing spam?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: import spam as sm\\n\",\r\n    \"         sm.bacon()\\n\",\r\n    \"         \\n\",\r\n    \"         or\\n\",\r\n    \"         \\n\",\r\n    \"         import spam\\n\",\r\n    \"         spam.bacon()\\n\",\r\n    \"         \"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.9.12\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assignment_2.ipynb b/Assignment_2.ipynb
+--- a/Assignment_2.ipynb	(revision 6e3eace1e2ebfb79b9524b4cdd5605bbd59a25ba)
++++ b/Assignment_2.ipynb	(date 1672513435845)
+@@ -1,8 +1,8 @@
+ {
+  "cells": [
+   {
+-   "cell_type": "raw",
+-   "id": "fc4a9090",
++   "cell_type": "markdown",
++   "id": "f86b299f",
+    "metadata": {},
+    "source": [
+     "1.What are the two values of the Boolean data type? How do you write them?\n",
+@@ -12,8 +12,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "6c9d1096",
++   "cell_type": "markdown",
++   "id": "14ad45f3",
+    "metadata": {},
+    "source": [
+     "2. What are the three different types of Boolean operators?\n",
+@@ -26,8 +26,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "643c70a7",
++   "cell_type": "markdown",
++   "id": "1c9bd772",
+    "metadata": {},
+    "source": [
+     "3. Make a list of each Boolean operators truth tables (i.e. every possible combination of Booleanvalues for the operator and what it evaluate ).\n",
+@@ -53,8 +53,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "42ad735c",
++   "cell_type": "markdown",
++   "id": "faaa9a44",
+    "metadata": {},
+    "source": [
+     "4. What are the values of the following expressions?\n",
+@@ -67,8 +67,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "b23b99ae",
++   "cell_type": "markdown",
++   "id": "2217f43b",
+    "metadata": {},
+    "source": [
+     "5. What are the six comparison operators?\n",
+@@ -82,8 +82,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "08f86c47",
++   "cell_type": "markdown",
++   "id": "437a1552",
+    "metadata": {},
+    "source": [
+     "6. How do you tell the difference between the equal to and assignment operators?Describe a\n",
+@@ -95,8 +95,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "ab61dc18",
++   "cell_type": "markdown",
++   "id": "27e06f71",
+    "metadata": {},
+    "source": [
+     "7. Identify the three blocks in this code:\n",
+@@ -116,8 +116,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4623fd5c",
++   "cell_type": "markdown",
++   "id": "c4a70c72",
+    "metadata": {},
+    "source": [
+     "8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints\n",
+@@ -132,8 +132,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "f4c7d81f",
++   "cell_type": "markdown",
++   "id": "be2a0813",
+    "metadata": {},
+    "source": [
+     "9.If your programme is stuck in an endless loop, what keys you’ll press?\n",
+@@ -142,8 +142,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "ad133ff5",
++   "cell_type": "markdown",
++   "id": "710951a7",
+    "metadata": {},
+    "source": [
+     "10. How can you tell the difference between break and continue?\n",
+@@ -154,8 +154,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "a0a32c22",
++   "cell_type": "markdown",
++   "id": "f1963069",
+    "metadata": {},
+    "source": [
+     "11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?\n",
+@@ -169,8 +169,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "27c13b45",
++   "cell_type": "markdown",
++   "id": "6b749499",
+    "metadata": {},
+    "source": [
+     "12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent\n",
+@@ -187,8 +187,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4f9ac458",
++   "cell_type": "markdown",
++   "id": "a6a55b81",
+    "metadata": {},
+    "source": [
+     "13. If you had a function named bacon() inside a module named spam, how would you call it after\n",
+Index: Assignment_1.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"6918cefd\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"1. In the below elements which of them are values or an expression? eg:- values can be\\n\",\r\n    \"integer or string and expressions will be mathematical operators.\\n\",\r\n    \"*\\n\",\r\n    \"'hello'\\n\",\r\n    \"-87.8\\n\",\r\n    \"-\\n\",\r\n    \"/\\n\",\r\n    \"+\\n\",\r\n    \"6\\n\",\r\n    \"\\n\",\r\n    \"Answer-:values='hello',-87.8,6\\n\",\r\n    \"        expression=*,-,/,+\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"dbffc217\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"2. What is the difference between string and variable?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Variable can store the information in form of values .variable can store the any data type e.g.interger,float string.\\n\",\r\n    \"         We can not assign white space between the characters of a variable name .\\n\",\r\n    \"         \\n\",\r\n    \"         String is a value that is inside quotes.Variable can hold a string but string can not hold a variable.\\n\",\r\n    \"         We can assign white space in a string.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"6c45b773\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"3. Describe three different data types.\\n\",\r\n    \"\\n\",\r\n    \"Answer-: Integer-is a whole number without decimals e.g. 1,2,10.In python we can convert any data type into integer\\n\",\r\n    \"                 using int() function.\\n\",\r\n    \"         \\n\",\r\n    \"         Float- is a number with decimals e.g.2.5,3.8.We can convert any data type to float using float() function.\\n\",\r\n    \"         \\n\",\r\n    \"         String-Any thing inside the quotes is called string,It can be Integer,float inside quotes.\\n\",\r\n    \"                E.g-\\\"vipin\\\",\\\"123\\\",\\\"0.25\\\".We can convert any data type to string using str() function.\\n\",\r\n    \"            \\n\",\r\n    \"        These are three buildin data types in python.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"623fb4b5\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"4. What is an expression made up of? What do all expressions do?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:A construct that consists of variables, operators, and method calls and is built using the \\n\",\r\n    \"        language's syntax is known as an expression. An expression evaluates to a single value.\\n\",\r\n    \"        An expression evaluates to a value\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"ae245fcf\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"5. This assignment statements, like spam = 10. What is the difference between an\\n\",\r\n    \"expression and a statement?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:Every statement can be an expression.But every expression can’t be a statement.\\n\",\r\n    \"        A statement executes something but An expression evaluates to a value.\\n\",\r\n    \"        Execution of a statement may or may not produces or displays a result value, it only does whatever the statement says.\\n\",\r\n    \"        but Evaluation of an expression always Produces or returns a result value.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"c36daf03\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"6. After running the following code, what does the variable bacon contain?\\n\",\r\n    \"bacon = 22\\n\",\r\n    \"bacon + 1\\n\",\r\n    \"\\n\",\r\n    \"Answer-:After running this code bacon still contain 22 because we added 1 to bacon variable but \\n\",\r\n    \"        we did not assign the new value to the bacon variable that why it is still 22\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4b8065e9\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"7. What should the values of the following two terms be?\\n\",\r\n    \"'spam'+'spamspam'\\n\",\r\n    \"'spam'*3\\n\",\r\n    \"\\n\",\r\n    \"Answer-: In the first statment we are doing concatation of two string \\n\",\r\n    \"         which will return 'spamspamspam' and in the second statment we are multiplying a string with it self by \\n\",\r\n    \"         three times which will be 'spamspamspam'.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"4e3e47d0\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"8. Why is eggs a valid variable name while 100 is invalid?\\n\",\r\n    \"\\n\",\r\n    \"Answer-:As per the variable name conventions a variable should be according to \\n\",\r\n    \"        A variable name must start with a letter or the underscore character\\n\",\r\n    \"        A variable name cannot start with a number\\n\",\r\n    \"        A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )\\n\",\r\n    \"        Variable names are case-sensitive (age, Age and AGE are three different variables)\\n\",\r\n    \"        \\n\",\r\n    \"        Thts why eggs is a valid variable name and 100 is invalid.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"b7a3d43b\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"9. What three functions can be used to get the integer, floating-point number, or string\\n\",\r\n    \"version of a value?\\n\",\r\n    \"\\n\",\r\n    \"Answer-: int() used to get a integer.\\n\",\r\n    \"         float() is used to get a float.\\n\",\r\n    \"         str() is used to get a string.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"raw\",\r\n   \"id\": \"67945128\",\r\n   \"metadata\": {},\r\n   \"source\": [\r\n    \"10. Why does this expression cause an error? How can you fix it?\\n\",\r\n    \"'I have eaten'+99+'burritos.'\\n\",\r\n    \"\\n\",\r\n    \"Answer-: In this expression the cause is that we are using mix data types to get some value.\\n\",\r\n    \"         To solve that issue in this expression we have to change the data type of 99 from integer to string.\\n\",\r\n    \"         'I have eaten'+str(99)+'burritos.'\"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.9.12\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assignment_1.ipynb b/Assignment_1.ipynb
+--- a/Assignment_1.ipynb	(revision 6e3eace1e2ebfb79b9524b4cdd5605bbd59a25ba)
++++ b/Assignment_1.ipynb	(date 1672513489064)
+@@ -1,8 +1,8 @@
+ {
+  "cells": [
+   {
+-   "cell_type": "raw",
+-   "id": "6918cefd",
++   "cell_type": "markdown",
++   "id": "15651a01",
+    "metadata": {},
+    "source": [
+     "1. In the below elements which of them are values or an expression? eg:- values can be\n",
+@@ -20,8 +20,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "dbffc217",
++   "cell_type": "markdown",
++   "id": "fb492ee5",
+    "metadata": {},
+    "source": [
+     "2. What is the difference between string and variable?\n",
+@@ -34,8 +34,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "6c45b773",
++   "cell_type": "markdown",
++   "id": "25940172",
+    "metadata": {},
+    "source": [
+     "3. Describe three different data types.\n",
+@@ -52,8 +52,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "623fb4b5",
++   "cell_type": "markdown",
++   "id": "94e158c7",
+    "metadata": {},
+    "source": [
+     "4. What is an expression made up of? What do all expressions do?\n",
+@@ -64,8 +64,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "ae245fcf",
++   "cell_type": "markdown",
++   "id": "b03a2db0",
+    "metadata": {},
+    "source": [
+     "5. This assignment statements, like spam = 10. What is the difference between an\n",
+@@ -78,8 +78,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "c36daf03",
++   "cell_type": "markdown",
++   "id": "3557399d",
+    "metadata": {},
+    "source": [
+     "6. After running the following code, what does the variable bacon contain?\n",
+@@ -91,8 +91,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4b8065e9",
++   "cell_type": "markdown",
++   "id": "f829a2a8",
+    "metadata": {},
+    "source": [
+     "7. What should the values of the following two terms be?\n",
+@@ -105,8 +105,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "4e3e47d0",
++   "cell_type": "markdown",
++   "id": "982d9ac4",
+    "metadata": {},
+    "source": [
+     "8. Why is eggs a valid variable name while 100 is invalid?\n",
+@@ -121,8 +121,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "b7a3d43b",
++   "cell_type": "markdown",
++   "id": "b60df10d",
+    "metadata": {},
+    "source": [
+     "9. What three functions can be used to get the integer, floating-point number, or string\n",
+@@ -134,8 +134,8 @@
+    ]
+   },
+   {
+-   "cell_type": "raw",
+-   "id": "67945128",
++   "cell_type": "markdown",
++   "id": "01a18d96",
+    "metadata": {},
+    "source": [
+     "10. Why does this expression cause an error? How can you fix it?\n",
